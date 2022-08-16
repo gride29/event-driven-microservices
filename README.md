@@ -1,10 +1,10 @@
 # microservices-demo
 
-### Architecture Overview
+## Architecture Overview
 
 ![](/architecture-overview.png)
 
-### Docker
+## Docker
 To run docker compose with Kafka clusters use:
 ```
 cd docker-compose
