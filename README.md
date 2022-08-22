@@ -1,4 +1,5 @@
 # microservices-demo
+Based on Event-Driven Microservices: Spring Boot, Kafka and Elastic Udemy course by Ali Gelenler.
 
 ## Architecture Overview
 

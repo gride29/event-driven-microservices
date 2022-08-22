@@ -4,7 +4,6 @@ import com.microservices.demo.config.TwitterToKafkaServiceConfigData;
 import com.microservices.demo.twitter.to.kafka.service.exception.TwitterToKafkaServiceException;
 import com.microservices.demo.twitter.to.kafka.service.listener.TwitterKafkaStatusListener;
 import com.microservices.demo.twitter.to.kafka.service.runner.StreamRunner;
-import org.jetbrains.annotations.NotNull;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.boot.autoconfigure.condition.ConditionalOnProperty;
@@ -117,7 +116,6 @@ public class MockKafkaStreamRunner implements StreamRunner {
         return formatTweetAsJsonWithParams(params);
     }
 
-    @NotNull
     private String formatTweetAsJsonWithParams(String[] params) {
         String tweet = tweetAsRawJson;
         for (int i = 0; i < params.length; i++) {
@@ -132,7 +130,6 @@ public class MockKafkaStreamRunner implements StreamRunner {
         return constructRandomTweet(keywords, tweet, tweetLength);
     }
 
-    @NotNull
     private String constructRandomTweet(String[] keywords, StringBuilder tweet, int tweetLength) {
         for (int i = 0; i < tweetLength; i++) {
             tweet.append(WORDS[RANDOM.nextInt(WORDS.length)]).append(" ");
