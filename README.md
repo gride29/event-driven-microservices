@@ -1,5 +1,5 @@
-# microservices-demo
-Based on Event-Driven Microservices: Spring Boot, Kafka and Elastic Udemy course by Ali Gelenler.
+# event-driven-microservices
+This repository contains a Java-based project that demonstrates an event-driven microservices architecture built with Spring Boot and Kafka. The project includes Kafka Streams for event processing, Elastic Stack for logging and monitoring, Netflix Eureka for service registration and discovery, and Spring Cloud Sleuth for distributed tracing.
 
 ## Architecture Overview
 
