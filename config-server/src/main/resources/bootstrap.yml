@@ -1,0 +1,20 @@
+spring:
+  application:
+    name: config-server
+  cloud:
+    config:
+      server:
+        git:
+          uri: https://github.com/gride29/spring-cloud-config-server-repository
+          username: gride29
+          password: '{cipher}d5ce8ae25e72dd23ff2b6735a815d0bec40bc366bb4fc999597ff5d026c24050fc72c39e320b8bf0f53ce43ac2621e526516bbc293ea9c49088ea96d97a67e05'
+          clone-on-start: true
+          default-label: main
+    fail-fast: true
+  security:
+    user:
+      name: spring_cloud_user
+      password: '{cipher}875424c311632d5da4682dcad6d55bb1313401c7dc70858c5e1fda86b37f51ce68e76d9d1de7b087021d5b3a37d0bd53'
+
+encrypt:
+  key: 'secret_key'

@@ -1,0 +1,23 @@
+2023-07-10 18:32:46 [main] INFO  c.g.m.d.t.t.k.s.TwitterToKafkaServiceApplication - Starting TwitterToKafkaServiceApplication on MacBook-Pro-Cezary.local with PID 55834 (/Users/olendec/Projekty/event-driven-microservices/twitter-to-kafka-service/target/classes started by olendec in /Users/olendec/Projekty/event-driven-microservices)
+2023-07-10 18:32:46 [main] INFO  c.g.m.d.t.t.k.s.TwitterToKafkaServiceApplication - No active profile set, falling back to default profiles: default
+2023-07-10 18:32:47 [main] INFO  c.g.m.d.t.t.k.s.TwitterToKafkaServiceApplication - Started TwitterToKafkaServiceApplication in 0.559 seconds (JVM running for 0.845)
+2023-07-10 18:32:47 [main] INFO  o.s.b.a.l.ConditionEvaluationReportLoggingListener - 
+
+Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
+2023-07-10 18:32:47 [main] ERROR o.s.boot.SpringApplication - Application run failed
+java.lang.IllegalStateException: No Scope registered for scope name 'request'
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:357)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:202)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.getBeansOfType(DefaultListableBeanFactory.java:624)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.getBeansOfType(DefaultListableBeanFactory.java:612)
+	at org.springframework.context.support.AbstractApplicationContext.getBeansOfType(AbstractApplicationContext.java:1243)
+	at org.springframework.boot.SpringApplication.callRunners(SpringApplication.java:772)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:322)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1237)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1226)
+	at com.gride29.microservices.demo.twitter.to.kafka.service.TwitterToKafkaServiceApplication.main(TwitterToKafkaServiceApplication.java:27)
+2023-07-10 18:33:05 [main] INFO  c.g.m.d.t.t.k.s.TwitterToKafkaServiceApplication - Starting TwitterToKafkaServiceApplication on MacBook-Pro-Cezary.local with PID 55842 (/Users/olendec/Projekty/event-driven-microservices/twitter-to-kafka-service/target/classes started by olendec in /Users/olendec/Projekty/event-driven-microservices)
+2023-07-10 18:33:05 [main] INFO  c.g.m.d.t.t.k.s.TwitterToKafkaServiceApplication - No active profile set, falling back to default profiles: default
+2023-07-10 18:33:05 [main] INFO  c.g.m.d.t.t.k.s.TwitterToKafkaServiceApplication - Started TwitterToKafkaServiceApplication in 0.364 seconds (JVM running for 0.61)
+2023-07-10 18:33:05 [main] INFO  c.g.m.d.t.t.k.s.TwitterToKafkaServiceApplication - App starts...
+2023-07-10 18:33:05 [main] INFO  c.g.m.d.t.t.k.s.TwitterToKafkaServiceApplication - [Java, Microservices, Spring, Kafka, Elasticsearch]
