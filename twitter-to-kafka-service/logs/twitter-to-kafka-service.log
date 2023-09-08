@@ -1,10 +1,10 @@
-2023-08-07 17:59:04 [main] INFO  o.s.c.c.c.ConfigServicePropertySourceLocator - Fetching config from server at : http://localhost:8888
-2023-08-07 17:59:06 [main] INFO  o.s.c.c.c.ConfigServicePropertySourceLocator - Located environment: name=twitter-to-kafka-service,config-client, profiles=[twitter_to_kafka], label=null, version=4785b158afaff7ee27e98992af56b3f3ed63beaa, state=null
-2023-08-07 17:59:06 [main] INFO  o.s.c.b.c.PropertySourceBootstrapConfiguration - Located property source: [BootstrapPropertySource {name='bootstrapProperties-configClient'}, BootstrapPropertySource {name='bootstrapProperties-https://github.com/gride29/spring-cloud-config-server-repository/config-client-twitter_to_kafka.yml'}, BootstrapPropertySource {name='bootstrapProperties-https://github.com/gride29/spring-cloud-config-server-repository/config-client.yml'}]
-2023-08-07 17:59:06 [main] INFO  c.g.m.d.t.t.k.s.TwitterToKafkaServiceApplication - The following profiles are active: twitter_to_kafka
-2023-08-07 17:59:06 [main] INFO  o.s.cloud.context.scope.GenericScope - BeanFactory id=87812432-e688-3bec-8d08-68ad6253cc6e
-2023-08-07 17:59:06 [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'org.springframework.retry.annotation.RetryConfiguration' of type [org.springframework.retry.annotation.RetryConfiguration$$EnhancerBySpringCGLIB$$204062dd] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
-2023-08-07 17:59:06 [main] INFO  o.a.k.c.admin.AdminClientConfig - AdminClientConfig values: 
+2023-08-17 20:20:48 [main] INFO  o.s.c.c.c.ConfigServicePropertySourceLocator - Fetching config from server at : http://localhost:8888
+2023-08-17 20:20:49 [main] INFO  o.s.c.c.c.ConfigServicePropertySourceLocator - Located environment: name=twitter-to-kafka-service,config-client, profiles=[twitter_to_kafka], label=null, version=b08b1322523f45f2532d445250f49e360ed9086f, state=null
+2023-08-17 20:20:49 [main] INFO  o.s.c.b.c.PropertySourceBootstrapConfiguration - Located property source: [BootstrapPropertySource {name='bootstrapProperties-configClient'}, BootstrapPropertySource {name='bootstrapProperties-https://github.com/gride29/spring-cloud-config-server-repository/config-client-twitter_to_kafka.yml'}, BootstrapPropertySource {name='bootstrapProperties-https://github.com/gride29/spring-cloud-config-server-repository/config-client.yml'}]
+2023-08-17 20:20:49 [main] INFO  c.g.m.d.t.t.k.s.TwitterToKafkaServiceApplication - The following profiles are active: twitter_to_kafka
+2023-08-17 20:20:50 [main] INFO  o.s.cloud.context.scope.GenericScope - BeanFactory id=16359103-a9a0-39a5-b58e-4cfeecaece2c
+2023-08-17 20:20:50 [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'org.springframework.retry.annotation.RetryConfiguration' of type [org.springframework.retry.annotation.RetryConfiguration$$EnhancerBySpringCGLIB$$be365f74] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2023-08-17 20:20:50 [main] INFO  o.a.k.c.admin.AdminClientConfig - AdminClientConfig values: 
 	bootstrap.servers = [localhost:19092, localhost:29092, localhost:39092]
 	client.dns.lookup = default
 	client.id = 
@@ -54,24 +54,24 @@
 	ssl.truststore.password = null
 	ssl.truststore.type = JKS
 
-2023-08-07 17:59:06 [main] INFO  o.a.kafka.common.utils.AppInfoParser - Kafka version: 2.5.1
-2023-08-07 17:59:06 [main] INFO  o.a.kafka.common.utils.AppInfoParser - Kafka commitId: 0efa8fb0f4c73d92
-2023-08-07 17:59:06 [main] INFO  o.a.kafka.common.utils.AppInfoParser - Kafka startTimeMs: 1691423946491
-2023-08-07 17:59:06 [main] INFO  o.s.b.a.s.r.ReactiveUserDetailsServiceAutoConfiguration - 
+2023-08-17 20:20:50 [main] INFO  o.a.kafka.common.utils.AppInfoParser - Kafka version: 2.5.1
+2023-08-17 20:20:50 [main] INFO  o.a.kafka.common.utils.AppInfoParser - Kafka commitId: 0efa8fb0f4c73d92
+2023-08-17 20:20:50 [main] INFO  o.a.kafka.common.utils.AppInfoParser - Kafka startTimeMs: 1692296450337
+2023-08-17 20:20:50 [main] INFO  o.s.b.a.s.r.ReactiveUserDetailsServiceAutoConfiguration - 
 
-Using generated security password: 81a6dfe9-36fb-439b-86c4-b65feb592da3
+Using generated security password: 5a2baae9-cdb9-49b6-a69f-82ca7fce359c
 
-2023-08-07 17:59:06 [main] INFO  o.s.b.w.e.netty.NettyWebServer - Netty started on port(s): 8080
-2023-08-07 17:59:06 [main] INFO  c.g.m.d.t.t.k.s.TwitterToKafkaServiceApplication - Started TwitterToKafkaServiceApplication in 3.012 seconds (JVM running for 3.243)
-2023-08-07 17:59:06 [main] INFO  c.g.m.d.t.t.k.s.TwitterToKafkaServiceApplication - App starts...
-2023-08-07 17:59:06 [main] INFO  c.g.m.d.k.a.client.KafkaAdminClient - Creating 1 topics(s), attempt 0
-2023-08-07 17:59:06 [main] INFO  c.g.m.d.k.a.client.KafkaAdminClient - Create topic result [KafkaFuture{value=null,exception=null,done=false}]
-2023-08-07 17:59:06 [main] INFO  c.g.m.d.k.a.client.KafkaAdminClient - Reading kafka topic [twitter-topic], attempt 0
-2023-08-07 17:59:09 [main] INFO  c.g.m.d.t.t.k.s.i.i.KafkaStreamInitializer - Topics with name twitter-topic is ready for operations
-2023-08-07 17:59:09 [main] INFO  c.g.m.d.t.t.k.s.r.i.MockKafkaStreamRunner - Starting mock filtering twitter streams for keywords [Java, Microservices, Kafka, Elasticsearch]
-2023-08-07 17:59:09 [pool-3-thread-1] INFO  c.g.m.d.t.t.k.s.l.TwitterKafkaStatusListener - Received status text libero posuere dolor purus Kafka massa ultricies sending to kafka topic twitter-topic
-2023-08-07 17:59:09 [pool-3-thread-1] INFO  c.g.m.d.k.p.c.s.i.TwitterKafkaProducer - Sending message='{"userId": 3674614107236449880, "id": 1607470600278215092, "text": "libero posuere dolor purus Kafka massa ultricies", "createdAt": 1691423949000}' to topic='twitter-topic'
-2023-08-07 17:59:09 [pool-3-thread-1] INFO  o.a.k.c.producer.ProducerConfig - ProducerConfig values: 
+2023-08-17 20:20:50 [main] INFO  o.s.b.w.e.netty.NettyWebServer - Netty started on port(s): 8181
+2023-08-17 20:20:50 [main] INFO  c.g.m.d.t.t.k.s.TwitterToKafkaServiceApplication - Started TwitterToKafkaServiceApplication in 2.686 seconds (JVM running for 2.907)
+2023-08-17 20:20:50 [main] INFO  c.g.m.d.t.t.k.s.TwitterToKafkaServiceApplication - App starts...
+2023-08-17 20:20:50 [main] INFO  c.g.m.d.k.a.client.KafkaAdminClient - Creating 1 topics(s), attempt 0
+2023-08-17 20:20:50 [main] INFO  c.g.m.d.k.a.client.KafkaAdminClient - Create topic result [KafkaFuture{value=null,exception=null,done=false}]
+2023-08-17 20:20:50 [main] INFO  c.g.m.d.k.a.client.KafkaAdminClient - Reading kafka topic [twitter-topic], attempt 0
+2023-08-17 20:20:50 [main] INFO  c.g.m.d.t.t.k.s.i.i.KafkaStreamInitializer - Topics with name twitter-topic is ready for operations
+2023-08-17 20:20:50 [main] INFO  c.g.m.d.t.t.k.s.r.i.MockKafkaStreamRunner - Starting mock filtering twitter streams for keywords [Java, Microservices, Kafka, Elasticsearch]
+2023-08-17 20:20:51 [pool-3-thread-1] INFO  c.g.m.d.t.t.k.s.l.TwitterKafkaStatusListener - Received status text congue pulvinar sit ipsum magna Kafka Fusce porttitor congue sending to kafka topic twitter-topic
+2023-08-17 20:20:51 [pool-3-thread-1] INFO  c.g.m.d.k.p.c.s.i.TwitterKafkaProducer - Sending message='{"userId": 6999750049796519802, "id": 3308073912407444655, "text": "congue pulvinar sit ipsum magna Kafka Fusce porttitor congue", "createdAt": 1692296450000}' to topic='twitter-topic'
+2023-08-17 20:20:51 [pool-3-thread-1] INFO  o.a.k.c.producer.ProducerConfig - ProducerConfig values: 
 	acks = -1
 	batch.size = 1638400
 	bootstrap.servers = [localhost:19092, localhost:29092, localhost:39092]
@@ -137,7 +137,7 @@ Using generated security password: 81a6dfe9-36fb-439b-86c4-b65feb592da3
 	transactional.id = null
 	value.serializer = class io.confluent.kafka.serializers.KafkaAvroSerializer
 
-2023-08-07 17:59:09 [pool-3-thread-1] INFO  i.c.k.s.KafkaAvroSerializerConfig - KafkaAvroSerializerConfig values: 
+2023-08-17 20:20:51 [pool-3-thread-1] INFO  i.c.k.s.KafkaAvroSerializerConfig - KafkaAvroSerializerConfig values: 
 	bearer.auth.token = [hidden]
 	proxy.port = -1
 	schema.reflection = false
@@ -153,104 +153,172 @@ Using generated security password: 81a6dfe9-36fb-439b-86c4-b65feb592da3
 	bearer.auth.credentials.source = STATIC_TOKEN
 	key.subject.name.strategy = class io.confluent.kafka.serializers.subject.TopicNameStrategy
 
-2023-08-07 17:59:09 [pool-3-thread-1] WARN  o.a.k.c.producer.ProducerConfig - The configuration 'internal.auto.downgrade.txn.commit' was supplied but isn't a known config.
-2023-08-07 17:59:09 [pool-3-thread-1] INFO  o.a.kafka.common.utils.AppInfoParser - Kafka version: 2.5.1
-2023-08-07 17:59:09 [pool-3-thread-1] INFO  o.a.kafka.common.utils.AppInfoParser - Kafka commitId: 0efa8fb0f4c73d92
-2023-08-07 17:59:09 [pool-3-thread-1] INFO  o.a.kafka.common.utils.AppInfoParser - Kafka startTimeMs: 1691423949231
-2023-08-07 17:59:09 [kafka-producer-network-thread | producer-1] INFO  org.apache.kafka.clients.Metadata - [Producer clientId=producer-1] Cluster ID: d2VMevzLTfOqFtjeJm9r7A
-2023-08-07 18:04:29 [kafka-admin-client-thread | adminclient-1] WARN  o.apache.kafka.clients.NetworkClient - [AdminClient clientId=adminclient-1] Connection to node 2 (localhost/127.0.0.1:29092) could not be established. Broker may not be available.
-2023-08-07 18:04:29 [kafka-admin-client-thread | adminclient-1] WARN  o.apache.kafka.clients.NetworkClient - [AdminClient clientId=adminclient-1] Connection to node 3 (localhost/127.0.0.1:39092) could not be established. Broker may not be available.
-2023-08-07 18:04:29 [kafka-producer-network-thread | producer-1] WARN  o.apache.kafka.clients.NetworkClient - [Producer clientId=producer-1] Connection to node 2 (localhost/127.0.0.1:29092) could not be established. Broker may not be available.
-2023-08-07 18:04:29 [kafka-admin-client-thread | adminclient-1] WARN  o.apache.kafka.clients.NetworkClient - [AdminClient clientId=adminclient-1] Connection to node 3 (localhost/127.0.0.1:39092) could not be established. Broker may not be available.
-2023-08-07 18:04:29 [kafka-admin-client-thread | adminclient-1] WARN  o.apache.kafka.clients.NetworkClient - [AdminClient clientId=adminclient-1] Connection to node 2 (localhost/127.0.0.1:29092) could not be established. Broker may not be available.
-2023-08-07 18:04:29 [kafka-producer-network-thread | producer-1] WARN  o.apache.kafka.clients.NetworkClient - [Producer clientId=producer-1] Connection to node 1 (localhost/127.0.0.1:19092) could not be established. Broker may not be available.
-2023-08-07 18:04:29 [kafka-producer-network-thread | producer-1] WARN  o.apache.kafka.clients.NetworkClient - [Producer clientId=producer-1] Connection to node 1 (localhost/127.0.0.1:19092) could not be established. Broker may not be available.
-2023-08-07 18:04:29 [kafka-admin-client-thread | adminclient-1] WARN  o.apache.kafka.clients.NetworkClient - [AdminClient clientId=adminclient-1] Connection to node 1 (localhost/127.0.0.1:19092) could not be established. Broker may not be available.
-2023-08-07 18:04:29 [kafka-admin-client-thread | adminclient-1] WARN  o.apache.kafka.clients.NetworkClient - [AdminClient clientId=adminclient-1] Connection to node 2 (localhost/127.0.0.1:29092) could not be established. Broker may not be available.
-2023-08-07 18:04:29 [kafka-admin-client-thread | adminclient-1] WARN  o.apache.kafka.clients.NetworkClient - [AdminClient clientId=adminclient-1] Connection to node 3 (localhost/127.0.0.1:39092) could not be established. Broker may not be available.
-2023-08-07 18:04:29 [kafka-producer-network-thread | producer-1] WARN  o.apache.kafka.clients.NetworkClient - [Producer clientId=producer-1] Connection to node 3 (localhost/127.0.0.1:39092) could not be established. Broker may not be available.
-2023-08-07 18:04:29 [kafka-producer-network-thread | producer-1] WARN  o.apache.kafka.clients.NetworkClient - [Producer clientId=producer-1] Connection to node 2 (localhost/127.0.0.1:29092) could not be established. Broker may not be available.
-2023-08-07 18:04:29 [kafka-admin-client-thread | adminclient-1] WARN  o.apache.kafka.clients.NetworkClient - [AdminClient clientId=adminclient-1] Connection to node 1 (localhost/127.0.0.1:19092) could not be established. Broker may not be available.
-2023-08-07 18:04:29 [kafka-producer-network-thread | producer-1] WARN  o.apache.kafka.clients.NetworkClient - [Producer clientId=producer-1] Connection to node 3 (localhost/127.0.0.1:39092) could not be established. Broker may not be available.
-2023-08-07 18:04:29 [kafka-admin-client-thread | adminclient-1] WARN  o.apache.kafka.clients.NetworkClient - [AdminClient clientId=adminclient-1] Connection to node 3 (localhost/127.0.0.1:39092) could not be established. Broker may not be available.
-2023-08-07 18:04:29 [kafka-admin-client-thread | adminclient-1] WARN  o.apache.kafka.clients.NetworkClient - [AdminClient clientId=adminclient-1] Connection to node 2 (localhost/127.0.0.1:29092) could not be established. Broker may not be available.
-2023-08-07 18:04:29 [kafka-producer-network-thread | producer-1] WARN  o.apache.kafka.clients.NetworkClient - [Producer clientId=producer-1] Connection to node 1 (localhost/127.0.0.1:19092) could not be established. Broker may not be available.
-2023-08-07 18:04:29 [kafka-producer-network-thread | producer-1] WARN  o.apache.kafka.clients.NetworkClient - [Producer clientId=producer-1] Connection to node 2 (localhost/127.0.0.1:29092) could not be established. Broker may not be available.
-2023-08-07 18:04:30 [kafka-producer-network-thread | producer-1] WARN  o.apache.kafka.clients.NetworkClient - [Producer clientId=producer-1] Connection to node 3 (localhost/127.0.0.1:39092) could not be established. Broker may not be available.
-2023-08-07 18:04:30 [kafka-admin-client-thread | adminclient-1] WARN  o.apache.kafka.clients.NetworkClient - [AdminClient clientId=adminclient-1] Connection to node 1 (localhost/127.0.0.1:19092) could not be established. Broker may not be available.
-2023-08-07 18:04:30 [kafka-producer-network-thread | producer-1] WARN  o.apache.kafka.clients.NetworkClient - [Producer clientId=producer-1] Connection to node 2 (localhost/127.0.0.1:29092) could not be established. Broker may not be available.
-2023-08-07 18:04:30 [kafka-admin-client-thread | adminclient-1] WARN  o.apache.kafka.clients.NetworkClient - [AdminClient clientId=adminclient-1] Connection to node 3 (localhost/127.0.0.1:39092) could not be established. Broker may not be available.
-2023-08-07 18:04:30 [kafka-admin-client-thread | adminclient-1] WARN  o.apache.kafka.clients.NetworkClient - [AdminClient clientId=adminclient-1] Connection to node 2 (localhost/127.0.0.1:29092) could not be established. Broker may not be available.
-2023-08-07 18:04:30 [kafka-producer-network-thread | producer-1] WARN  o.apache.kafka.clients.NetworkClient - [Producer clientId=producer-1] Connection to node 1 (localhost/127.0.0.1:19092) could not be established. Broker may not be available.
-2023-08-07 18:04:30 [kafka-producer-network-thread | producer-1] WARN  o.apache.kafka.clients.NetworkClient - [Producer clientId=producer-1] Connection to node 3 (localhost/127.0.0.1:39092) could not be established. Broker may not be available.
-2023-08-07 18:04:30 [kafka-producer-network-thread | producer-1] WARN  o.apache.kafka.clients.NetworkClient - [Producer clientId=producer-1] Connection to node 2 (localhost/127.0.0.1:29092) could not be established. Broker may not be available.
-2023-08-07 18:04:30 [kafka-admin-client-thread | adminclient-1] WARN  o.apache.kafka.clients.NetworkClient - [AdminClient clientId=adminclient-1] Connection to node 1 (localhost/127.0.0.1:19092) could not be established. Broker may not be available.
-2023-08-07 18:04:30 [kafka-producer-network-thread | producer-1] WARN  o.apache.kafka.clients.NetworkClient - [Producer clientId=producer-1] Connection to node 3 (localhost/127.0.0.1:39092) could not be established. Broker may not be available.
-2023-08-07 18:04:30 [kafka-admin-client-thread | adminclient-1] WARN  o.apache.kafka.clients.NetworkClient - [AdminClient clientId=adminclient-1] Connection to node 3 (localhost/127.0.0.1:39092) could not be established. Broker may not be available.
-2023-08-07 18:04:30 [kafka-admin-client-thread | adminclient-1] WARN  o.apache.kafka.clients.NetworkClient - [AdminClient clientId=adminclient-1] Connection to node 2 (localhost/127.0.0.1:29092) could not be established. Broker may not be available.
-2023-08-07 18:04:31 [kafka-producer-network-thread | producer-1] WARN  o.apache.kafka.clients.NetworkClient - [Producer clientId=producer-1] Connection to node 1 (localhost/127.0.0.1:19092) could not be established. Broker may not be available.
-2023-08-07 18:04:31 [kafka-producer-network-thread | producer-1] WARN  o.apache.kafka.clients.NetworkClient - [Producer clientId=producer-1] Connection to node 2 (localhost/127.0.0.1:29092) could not be established. Broker may not be available.
-2023-08-07 18:04:31 [kafka-producer-network-thread | producer-1] WARN  o.apache.kafka.clients.NetworkClient - [Producer clientId=producer-1] Connection to node 3 (localhost/127.0.0.1:39092) could not be established. Broker may not be available.
-2023-08-07 18:04:31 [kafka-admin-client-thread | adminclient-1] WARN  o.apache.kafka.clients.NetworkClient - [AdminClient clientId=adminclient-1] Connection to node 2 (localhost/127.0.0.1:29092) could not be established. Broker may not be available.
-2023-08-07 18:04:31 [kafka-admin-client-thread | adminclient-1] WARN  o.apache.kafka.clients.NetworkClient - [AdminClient clientId=adminclient-1] Connection to node 1 (localhost/127.0.0.1:19092) could not be established. Broker may not be available.
-2023-08-07 18:04:31 [kafka-admin-client-thread | adminclient-1] WARN  o.apache.kafka.clients.NetworkClient - [AdminClient clientId=adminclient-1] Connection to node 3 (localhost/127.0.0.1:39092) could not be established. Broker may not be available.
-2023-08-07 18:04:32 [kafka-producer-network-thread | producer-1] WARN  o.apache.kafka.clients.NetworkClient - [Producer clientId=producer-1] Connection to node 1 (localhost/127.0.0.1:19092) could not be established. Broker may not be available.
-2023-08-07 18:04:32 [kafka-producer-network-thread | producer-1] WARN  o.apache.kafka.clients.NetworkClient - [Producer clientId=producer-1] Connection to node 2 (localhost/127.0.0.1:29092) could not be established. Broker may not be available.
-2023-08-07 18:04:32 [kafka-producer-network-thread | producer-1] WARN  o.apache.kafka.clients.NetworkClient - [Producer clientId=producer-1] Connection to node 3 (localhost/127.0.0.1:39092) could not be established. Broker may not be available.
-2023-08-07 18:04:32 [kafka-admin-client-thread | adminclient-1] WARN  o.apache.kafka.clients.NetworkClient - [AdminClient clientId=adminclient-1] Connection to node 2 (localhost/127.0.0.1:29092) could not be established. Broker may not be available.
-2023-08-07 18:04:32 [kafka-admin-client-thread | adminclient-1] WARN  o.apache.kafka.clients.NetworkClient - [AdminClient clientId=adminclient-1] Connection to node 1 (localhost/127.0.0.1:19092) could not be established. Broker may not be available.
-2023-08-07 18:04:33 [kafka-admin-client-thread | adminclient-1] WARN  o.apache.kafka.clients.NetworkClient - [AdminClient clientId=adminclient-1] Connection to node 3 (localhost/127.0.0.1:39092) could not be established. Broker may not be available.
-2023-08-07 18:04:33 [kafka-producer-network-thread | producer-1] WARN  o.apache.kafka.clients.NetworkClient - [Producer clientId=producer-1] Connection to node 1 (localhost/127.0.0.1:19092) could not be established. Broker may not be available.
-2023-08-07 18:04:33 [kafka-producer-network-thread | producer-1] WARN  o.apache.kafka.clients.NetworkClient - [Producer clientId=producer-1] Connection to node 2 (localhost/127.0.0.1:29092) could not be established. Broker may not be available.
-2023-08-07 18:04:33 [kafka-producer-network-thread | producer-1] WARN  o.apache.kafka.clients.NetworkClient - [Producer clientId=producer-1] Connection to node 3 (localhost/127.0.0.1:39092) could not be established. Broker may not be available.
-2023-08-07 18:04:33 [kafka-admin-client-thread | adminclient-1] WARN  o.apache.kafka.clients.NetworkClient - [AdminClient clientId=adminclient-1] Connection to node 2 (localhost/127.0.0.1:29092) could not be established. Broker may not be available.
-2023-08-07 18:04:34 [kafka-admin-client-thread | adminclient-1] WARN  o.apache.kafka.clients.NetworkClient - [AdminClient clientId=adminclient-1] Connection to node 1 (localhost/127.0.0.1:19092) could not be established. Broker may not be available.
-2023-08-07 18:04:34 [kafka-producer-network-thread | producer-1] WARN  o.apache.kafka.clients.NetworkClient - [Producer clientId=producer-1] Connection to node 1 (localhost/127.0.0.1:19092) could not be established. Broker may not be available.
-2023-08-07 18:04:34 [kafka-producer-network-thread | producer-1] WARN  o.apache.kafka.clients.NetworkClient - [Producer clientId=producer-1] Connection to node 2 (localhost/127.0.0.1:29092) could not be established. Broker may not be available.
-2023-08-07 18:04:34 [kafka-admin-client-thread | adminclient-1] WARN  o.apache.kafka.clients.NetworkClient - [AdminClient clientId=adminclient-1] Connection to node 3 (localhost/127.0.0.1:39092) could not be established. Broker may not be available.
-2023-08-07 18:04:34 [kafka-producer-network-thread | producer-1] WARN  o.apache.kafka.clients.NetworkClient - [Producer clientId=producer-1] Connection to node 3 (localhost/127.0.0.1:39092) could not be established. Broker may not be available.
-2023-08-07 18:04:34 [kafka-admin-client-thread | adminclient-1] WARN  o.apache.kafka.clients.NetworkClient - [AdminClient clientId=adminclient-1] Connection to node 2 (localhost/127.0.0.1:29092) could not be established. Broker may not be available.
-2023-08-07 18:04:35 [kafka-producer-network-thread | producer-1] WARN  o.apache.kafka.clients.NetworkClient - [Producer clientId=producer-1] Connection to node 1 (localhost/127.0.0.1:19092) could not be established. Broker may not be available.
-2023-08-07 18:04:35 [kafka-producer-network-thread | producer-1] WARN  o.apache.kafka.clients.NetworkClient - [Producer clientId=producer-1] Connection to node 2 (localhost/127.0.0.1:29092) could not be established. Broker may not be available.
-2023-08-07 18:04:35 [kafka-admin-client-thread | adminclient-1] WARN  o.apache.kafka.clients.NetworkClient - [AdminClient clientId=adminclient-1] Connection to node 1 (localhost/127.0.0.1:19092) could not be established. Broker may not be available.
-2023-08-07 18:04:35 [kafka-admin-client-thread | adminclient-1] WARN  o.apache.kafka.clients.NetworkClient - [AdminClient clientId=adminclient-1] Connection to node 3 (localhost/127.0.0.1:39092) could not be established. Broker may not be available.
-2023-08-07 18:04:35 [kafka-producer-network-thread | producer-1] WARN  o.apache.kafka.clients.NetworkClient - [Producer clientId=producer-1] Connection to node 3 (localhost/127.0.0.1:39092) could not be established. Broker may not be available.
-2023-08-07 18:04:35 [kafka-admin-client-thread | adminclient-1] WARN  o.apache.kafka.clients.NetworkClient - [AdminClient clientId=adminclient-1] Connection to node 2 (localhost/127.0.0.1:29092) could not be established. Broker may not be available.
-2023-08-07 18:04:35 [kafka-producer-network-thread | producer-1] WARN  o.apache.kafka.clients.NetworkClient - [Producer clientId=producer-1] Connection to node 1 (localhost/127.0.0.1:19092) could not be established. Broker may not be available.
-2023-08-07 18:04:36 [kafka-producer-network-thread | producer-1] WARN  o.apache.kafka.clients.NetworkClient - [Producer clientId=producer-1] Connection to node 2 (localhost/127.0.0.1:29092) could not be established. Broker may not be available.
-2023-08-07 18:04:36 [kafka-admin-client-thread | adminclient-1] WARN  o.apache.kafka.clients.NetworkClient - [AdminClient clientId=adminclient-1] Connection to node 3 (localhost/127.0.0.1:39092) could not be established. Broker may not be available.
-2023-08-07 18:04:36 [kafka-admin-client-thread | adminclient-1] WARN  o.apache.kafka.clients.NetworkClient - [AdminClient clientId=adminclient-1] Connection to node 1 (localhost/127.0.0.1:19092) could not be established. Broker may not be available.
-2023-08-07 18:04:36 [kafka-producer-network-thread | producer-1] WARN  o.apache.kafka.clients.NetworkClient - [Producer clientId=producer-1] Connection to node 3 (localhost/127.0.0.1:39092) could not be established. Broker may not be available.
-2023-08-07 18:04:36 [kafka-admin-client-thread | adminclient-1] WARN  o.apache.kafka.clients.NetworkClient - [AdminClient clientId=adminclient-1] Connection to node 2 (localhost/127.0.0.1:29092) could not be established. Broker may not be available.
-2023-08-07 18:04:36 [kafka-producer-network-thread | producer-1] WARN  o.apache.kafka.clients.NetworkClient - [Producer clientId=producer-1] Connection to node 1 (localhost/127.0.0.1:19092) could not be established. Broker may not be available.
-2023-08-07 18:04:37 [kafka-producer-network-thread | producer-1] WARN  o.apache.kafka.clients.NetworkClient - [Producer clientId=producer-1] Connection to node 2 (localhost/127.0.0.1:29092) could not be established. Broker may not be available.
-2023-08-07 18:04:37 [kafka-admin-client-thread | adminclient-1] WARN  o.apache.kafka.clients.NetworkClient - [AdminClient clientId=adminclient-1] Connection to node 3 (localhost/127.0.0.1:39092) could not be established. Broker may not be available.
-2023-08-07 18:04:37 [kafka-admin-client-thread | adminclient-1] WARN  o.apache.kafka.clients.NetworkClient - [AdminClient clientId=adminclient-1] Connection to node 1 (localhost/127.0.0.1:19092) could not be established. Broker may not be available.
-2023-08-07 18:04:37 [kafka-producer-network-thread | producer-1] WARN  o.apache.kafka.clients.NetworkClient - [Producer clientId=producer-1] Connection to node 3 (localhost/127.0.0.1:39092) could not be established. Broker may not be available.
-2023-08-07 18:04:37 [kafka-admin-client-thread | adminclient-1] WARN  o.apache.kafka.clients.NetworkClient - [AdminClient clientId=adminclient-1] Connection to node 2 (localhost/127.0.0.1:29092) could not be established. Broker may not be available.
-2023-08-07 18:04:37 [kafka-producer-network-thread | producer-1] WARN  o.apache.kafka.clients.NetworkClient - [Producer clientId=producer-1] Connection to node 1 (localhost/127.0.0.1:19092) could not be established. Broker may not be available.
-2023-08-07 18:04:38 [kafka-producer-network-thread | producer-1] WARN  o.apache.kafka.clients.NetworkClient - [Producer clientId=producer-1] Connection to node 2 (localhost/127.0.0.1:29092) could not be established. Broker may not be available.
-2023-08-07 18:04:38 [kafka-admin-client-thread | adminclient-1] WARN  o.apache.kafka.clients.NetworkClient - [AdminClient clientId=adminclient-1] Connection to node 1 (localhost/127.0.0.1:19092) could not be established. Broker may not be available.
-2023-08-07 18:04:38 [kafka-admin-client-thread | adminclient-1] WARN  o.apache.kafka.clients.NetworkClient - [AdminClient clientId=adminclient-1] Connection to node 3 (localhost/127.0.0.1:39092) could not be established. Broker may not be available.
-2023-08-07 18:04:38 [kafka-admin-client-thread | adminclient-1] WARN  o.apache.kafka.clients.NetworkClient - [AdminClient clientId=adminclient-1] Connection to node 2 (localhost/127.0.0.1:29092) could not be established. Broker may not be available.
-2023-08-07 18:04:38 [kafka-producer-network-thread | producer-1] WARN  o.apache.kafka.clients.NetworkClient - [Producer clientId=producer-1] Connection to node 3 (localhost/127.0.0.1:39092) could not be established. Broker may not be available.
-2023-08-07 18:04:39 [kafka-producer-network-thread | producer-1] WARN  o.apache.kafka.clients.NetworkClient - [Producer clientId=producer-1] Connection to node 2 (localhost/127.0.0.1:29092) could not be established. Broker may not be available.
-2023-08-07 18:04:39 [kafka-admin-client-thread | adminclient-1] WARN  o.apache.kafka.clients.NetworkClient - [AdminClient clientId=adminclient-1] Connection to node 3 (localhost/127.0.0.1:39092) could not be established. Broker may not be available.
-2023-08-07 18:04:39 [kafka-producer-network-thread | producer-1] WARN  o.apache.kafka.clients.NetworkClient - [Producer clientId=producer-1] Connection to node 1 (localhost/127.0.0.1:19092) could not be established. Broker may not be available.
-2023-08-07 18:04:39 [kafka-admin-client-thread | adminclient-1] WARN  o.apache.kafka.clients.NetworkClient - [AdminClient clientId=adminclient-1] Connection to node 1 (localhost/127.0.0.1:19092) could not be established. Broker may not be available.
-2023-08-07 18:04:39 [kafka-admin-client-thread | adminclient-1] WARN  o.apache.kafka.clients.NetworkClient - [AdminClient clientId=adminclient-1] Connection to node 2 (localhost/127.0.0.1:29092) could not be established. Broker may not be available.
-2023-08-07 18:04:39 [kafka-producer-network-thread | producer-1] WARN  o.apache.kafka.clients.NetworkClient - [Producer clientId=producer-1] Connection to node 3 (localhost/127.0.0.1:39092) could not be established. Broker may not be available.
-2023-08-07 18:04:40 [kafka-producer-network-thread | producer-1] WARN  o.apache.kafka.clients.NetworkClient - [Producer clientId=producer-1] Connection to node 1 (localhost/127.0.0.1:19092) could not be established. Broker may not be available.
-2023-08-07 18:04:40 [kafka-producer-network-thread | producer-1] WARN  o.apache.kafka.clients.NetworkClient - [Producer clientId=producer-1] Connection to node 2 (localhost/127.0.0.1:29092) could not be established. Broker may not be available.
-2023-08-07 18:04:40 [kafka-admin-client-thread | adminclient-1] WARN  o.apache.kafka.clients.NetworkClient - [AdminClient clientId=adminclient-1] Connection to node 3 (localhost/127.0.0.1:39092) could not be established. Broker may not be available.
-2023-08-07 18:04:40 [kafka-admin-client-thread | adminclient-1] WARN  o.apache.kafka.clients.NetworkClient - [AdminClient clientId=adminclient-1] Connection to node 1 (localhost/127.0.0.1:19092) could not be established. Broker may not be available.
-2023-08-07 18:04:40 [kafka-producer-network-thread | producer-1] WARN  o.apache.kafka.clients.NetworkClient - [Producer clientId=producer-1] Connection to node 3 (localhost/127.0.0.1:39092) could not be established. Broker may not be available.
-2023-08-07 18:04:40 [kafka-admin-client-thread | adminclient-1] WARN  o.apache.kafka.clients.NetworkClient - [AdminClient clientId=adminclient-1] Connection to node 2 (localhost/127.0.0.1:29092) could not be established. Broker may not be available.
-2023-08-07 18:04:41 [kafka-admin-client-thread | adminclient-1] WARN  o.apache.kafka.clients.NetworkClient - [AdminClient clientId=adminclient-1] Connection to node 3 (localhost/127.0.0.1:39092) could not be established. Broker may not be available.
-2023-08-07 18:04:41 [kafka-admin-client-thread | adminclient-1] WARN  o.apache.kafka.clients.NetworkClient - [AdminClient clientId=adminclient-1] Connection to node 1 (localhost/127.0.0.1:19092) could not be established. Broker may not be available.
-2023-08-07 18:04:41 [kafka-producer-network-thread | producer-1] WARN  o.apache.kafka.clients.NetworkClient - [Producer clientId=producer-1] Connection to node 2 (localhost/127.0.0.1:29092) could not be established. Broker may not be available.
-2023-08-07 18:04:41 [kafka-admin-client-thread | adminclient-1] INFO  o.a.k.c.a.i.AdminMetadataManager - [AdminClient clientId=adminclient-1] Metadata update failed
-org.apache.kafka.common.errors.TimeoutException: Call(callName=fetchMetadata, deadlineMs=1691424299084) timed out at 9223372036854775807 after 1 attempt(s)
-Caused by: org.apache.kafka.common.errors.TimeoutException: The AdminClient thread has exited.
-2023-08-07 18:04:41 [SpringContextShutdownHook] INFO  c.g.m.d.k.p.c.s.i.TwitterKafkaProducer - Closing kafka producer
-2023-08-07 18:04:41 [SpringContextShutdownHook] INFO  o.a.k.clients.producer.KafkaProducer - [Producer clientId=producer-1] Closing the Kafka producer with timeoutMillis = 30000 ms.
+2023-08-17 20:20:51 [pool-3-thread-1] WARN  o.a.k.c.producer.ProducerConfig - The configuration 'internal.auto.downgrade.txn.commit' was supplied but isn't a known config.
+2023-08-17 20:20:51 [pool-3-thread-1] INFO  o.a.kafka.common.utils.AppInfoParser - Kafka version: 2.5.1
+2023-08-17 20:20:51 [pool-3-thread-1] INFO  o.a.kafka.common.utils.AppInfoParser - Kafka commitId: 0efa8fb0f4c73d92
+2023-08-17 20:20:51 [pool-3-thread-1] INFO  o.a.kafka.common.utils.AppInfoParser - Kafka startTimeMs: 1692296451049
+2023-08-17 20:20:51 [kafka-producer-network-thread | producer-1] INFO  org.apache.kafka.clients.Metadata - [Producer clientId=producer-1] Cluster ID: tv7sh_oRRC6a26whxPF84Q
+2023-08-17 20:21:23 [SpringContextShutdownHook] INFO  c.g.m.d.k.p.c.s.i.TwitterKafkaProducer - Closing kafka producer!
+2023-08-17 20:21:23 [SpringContextShutdownHook] INFO  o.a.k.clients.producer.KafkaProducer - [Producer clientId=producer-1] Closing the Kafka producer with timeoutMillis = 30000 ms.
+2023-08-17 21:49:12 [main] INFO  o.s.c.c.c.ConfigServicePropertySourceLocator - Fetching config from server at : http://localhost:8888
+2023-08-17 21:49:14 [main] INFO  o.s.c.c.c.ConfigServicePropertySourceLocator - Located environment: name=twitter-to-kafka-service,config-client, profiles=[twitter_to_kafka], label=null, version=b08b1322523f45f2532d445250f49e360ed9086f, state=null
+2023-08-17 21:49:14 [main] INFO  o.s.c.b.c.PropertySourceBootstrapConfiguration - Located property source: [BootstrapPropertySource {name='bootstrapProperties-configClient'}, BootstrapPropertySource {name='bootstrapProperties-https://github.com/gride29/spring-cloud-config-server-repository/config-client-twitter_to_kafka.yml'}, BootstrapPropertySource {name='bootstrapProperties-https://github.com/gride29/spring-cloud-config-server-repository/config-client.yml'}]
+2023-08-17 21:49:14 [main] INFO  c.g.m.d.t.t.k.s.TwitterToKafkaServiceApplication - The following profiles are active: twitter_to_kafka
+2023-08-17 21:49:14 [main] INFO  o.s.cloud.context.scope.GenericScope - BeanFactory id=16359103-a9a0-39a5-b58e-4cfeecaece2c
+2023-08-17 21:49:14 [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'org.springframework.retry.annotation.RetryConfiguration' of type [org.springframework.retry.annotation.RetryConfiguration$$EnhancerBySpringCGLIB$$5b6e8b6] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2023-08-17 21:49:14 [main] INFO  o.a.k.c.admin.AdminClientConfig - AdminClientConfig values: 
+	bootstrap.servers = [localhost:19092, localhost:29092, localhost:39092]
+	client.dns.lookup = default
+	client.id = 
+	connections.max.idle.ms = 300000
+	default.api.timeout.ms = 60000
+	metadata.max.age.ms = 300000
+	metric.reporters = []
+	metrics.num.samples = 2
+	metrics.recording.level = INFO
+	metrics.sample.window.ms = 30000
+	receive.buffer.bytes = 65536
+	reconnect.backoff.max.ms = 1000
+	reconnect.backoff.ms = 50
+	request.timeout.ms = 30000
+	retries = 2147483647
+	retry.backoff.ms = 100
+	sasl.client.callback.handler.class = null
+	sasl.jaas.config = null
+	sasl.kerberos.kinit.cmd = /usr/bin/kinit
+	sasl.kerberos.min.time.before.relogin = 60000
+	sasl.kerberos.service.name = null
+	sasl.kerberos.ticket.renew.jitter = 0.05
+	sasl.kerberos.ticket.renew.window.factor = 0.8
+	sasl.login.callback.handler.class = null
+	sasl.login.class = null
+	sasl.login.refresh.buffer.seconds = 300
+	sasl.login.refresh.min.period.seconds = 60
+	sasl.login.refresh.window.factor = 0.8
+	sasl.login.refresh.window.jitter = 0.05
+	sasl.mechanism = GSSAPI
+	security.protocol = PLAINTEXT
+	security.providers = null
+	send.buffer.bytes = 131072
+	ssl.cipher.suites = null
+	ssl.enabled.protocols = [TLSv1.2]
+	ssl.endpoint.identification.algorithm = https
+	ssl.key.password = null
+	ssl.keymanager.algorithm = SunX509
+	ssl.keystore.location = null
+	ssl.keystore.password = null
+	ssl.keystore.type = JKS
+	ssl.protocol = TLSv1.2
+	ssl.provider = null
+	ssl.secure.random.implementation = null
+	ssl.trustmanager.algorithm = PKIX
+	ssl.truststore.location = null
+	ssl.truststore.password = null
+	ssl.truststore.type = JKS
+
+2023-08-17 21:49:14 [main] INFO  o.a.kafka.common.utils.AppInfoParser - Kafka version: 2.5.1
+2023-08-17 21:49:14 [main] INFO  o.a.kafka.common.utils.AppInfoParser - Kafka commitId: 0efa8fb0f4c73d92
+2023-08-17 21:49:14 [main] INFO  o.a.kafka.common.utils.AppInfoParser - Kafka startTimeMs: 1692301754819
+2023-08-17 21:49:14 [main] INFO  o.s.b.a.s.r.ReactiveUserDetailsServiceAutoConfiguration - 
+
+Using generated security password: 7d8e8eee-0480-4279-a910-3077278b6a37
+
+2023-08-17 21:49:15 [main] INFO  o.s.b.w.e.netty.NettyWebServer - Netty started on port(s): 8181
+2023-08-17 21:49:15 [main] INFO  c.g.m.d.t.t.k.s.TwitterToKafkaServiceApplication - Started TwitterToKafkaServiceApplication in 3.126 seconds (JVM running for 3.372)
+2023-08-17 21:49:15 [main] INFO  c.g.m.d.t.t.k.s.TwitterToKafkaServiceApplication - App starts...
+2023-08-17 21:49:15 [main] INFO  c.g.m.d.k.a.client.KafkaAdminClient - Creating 1 topics(s), attempt 0
+2023-08-17 21:49:15 [main] INFO  c.g.m.d.k.a.client.KafkaAdminClient - Create topic result [KafkaFuture{value=null,exception=null,done=false}]
+2023-08-17 21:49:15 [main] INFO  c.g.m.d.k.a.client.KafkaAdminClient - Reading kafka topic [twitter-topic], attempt 0
+2023-08-17 21:49:15 [main] INFO  c.g.m.d.t.t.k.s.i.i.KafkaStreamInitializer - Topics with name twitter-topic is ready for operations
+2023-08-17 21:49:15 [main] INFO  c.g.m.d.t.t.k.s.r.i.MockKafkaStreamRunner - Starting mock filtering twitter streams for keywords [Java, Microservices, Kafka, Elasticsearch]
+2023-08-17 21:49:15 [pool-3-thread-1] INFO  c.g.m.d.t.t.k.s.l.TwitterKafkaStatusListener - Received status text consectetuer lectus massa malesuada elit Maecenas magna Java ultricies Lorem dolor purus magna sending to kafka topic twitter-topic
+2023-08-17 21:49:15 [pool-3-thread-1] INFO  c.g.m.d.k.p.c.s.i.TwitterKafkaProducer - Sending message='{"userId": 6387031034035361798, "id": 6359076896251328709, "text": "consectetuer lectus massa malesuada elit Maecenas magna Java ultricies Lorem dolor purus magna", "createdAt": 1692301755000}' to topic='twitter-topic'
+2023-08-17 21:49:15 [pool-3-thread-1] INFO  o.a.k.c.producer.ProducerConfig - ProducerConfig values: 
+	acks = -1
+	batch.size = 1638400
+	bootstrap.servers = [localhost:19092, localhost:29092, localhost:39092]
+	buffer.memory = 33554432
+	client.dns.lookup = default
+	client.id = producer-1
+	compression.type = snappy
+	connections.max.idle.ms = 540000
+	delivery.timeout.ms = 120000
+	enable.idempotence = false
+	interceptor.classes = []
+	key.serializer = class org.apache.kafka.common.serialization.LongSerializer
+	linger.ms = 5
+	max.block.ms = 60000
+	max.in.flight.requests.per.connection = 5
+	max.request.size = 1048576
+	metadata.max.age.ms = 300000
+	metadata.max.idle.ms = 300000
+	metric.reporters = []
+	metrics.num.samples = 2
+	metrics.recording.level = INFO
+	metrics.sample.window.ms = 30000
+	partitioner.class = class org.apache.kafka.clients.producer.internals.DefaultPartitioner
+	receive.buffer.bytes = 32768
+	reconnect.backoff.max.ms = 1000
+	reconnect.backoff.ms = 50
+	request.timeout.ms = 60000
+	retries = 5
+	retry.backoff.ms = 100
+	sasl.client.callback.handler.class = null
+	sasl.jaas.config = null
+	sasl.kerberos.kinit.cmd = /usr/bin/kinit
+	sasl.kerberos.min.time.before.relogin = 60000
+	sasl.kerberos.service.name = null
+	sasl.kerberos.ticket.renew.jitter = 0.05
+	sasl.kerberos.ticket.renew.window.factor = 0.8
+	sasl.login.callback.handler.class = null
+	sasl.login.class = null
+	sasl.login.refresh.buffer.seconds = 300
+	sasl.login.refresh.min.period.seconds = 60
+	sasl.login.refresh.window.factor = 0.8
+	sasl.login.refresh.window.jitter = 0.05
+	sasl.mechanism = GSSAPI
+	security.protocol = PLAINTEXT
+	security.providers = null
+	send.buffer.bytes = 131072
+	ssl.cipher.suites = null
+	ssl.enabled.protocols = [TLSv1.2]
+	ssl.endpoint.identification.algorithm = https
+	ssl.key.password = null
+	ssl.keymanager.algorithm = SunX509
+	ssl.keystore.location = null
+	ssl.keystore.password = null
+	ssl.keystore.type = JKS
+	ssl.protocol = TLSv1.2
+	ssl.provider = null
+	ssl.secure.random.implementation = null
+	ssl.trustmanager.algorithm = PKIX
+	ssl.truststore.location = null
+	ssl.truststore.password = null
+	ssl.truststore.type = JKS
+	transaction.timeout.ms = 60000
+	transactional.id = null
+	value.serializer = class io.confluent.kafka.serializers.KafkaAvroSerializer
+
+2023-08-17 21:49:15 [pool-3-thread-1] INFO  i.c.k.s.KafkaAvroSerializerConfig - KafkaAvroSerializerConfig values: 
+	bearer.auth.token = [hidden]
+	proxy.port = -1
+	schema.reflection = false
+	auto.register.schemas = true
+	max.schemas.per.subject = 1000
+	basic.auth.credentials.source = URL
+	value.subject.name.strategy = class io.confluent.kafka.serializers.subject.TopicNameStrategy
+	schema.registry.url = [http://localhost:8081]
+	basic.auth.user.info = [hidden]
+	proxy.host = 
+	use.latest.version = false
+	schema.registry.basic.auth.user.info = [hidden]
+	bearer.auth.credentials.source = STATIC_TOKEN
+	key.subject.name.strategy = class io.confluent.kafka.serializers.subject.TopicNameStrategy
+
+2023-08-17 21:49:15 [pool-3-thread-1] WARN  o.a.k.c.producer.ProducerConfig - The configuration 'internal.auto.downgrade.txn.commit' was supplied but isn't a known config.
+2023-08-17 21:49:15 [pool-3-thread-1] INFO  o.a.kafka.common.utils.AppInfoParser - Kafka version: 2.5.1
+2023-08-17 21:49:15 [pool-3-thread-1] INFO  o.a.kafka.common.utils.AppInfoParser - Kafka commitId: 0efa8fb0f4c73d92
+2023-08-17 21:49:15 [pool-3-thread-1] INFO  o.a.kafka.common.utils.AppInfoParser - Kafka startTimeMs: 1692301755473
+2023-08-17 21:49:15 [kafka-producer-network-thread | producer-1] INFO  org.apache.kafka.clients.Metadata - [Producer clientId=producer-1] Cluster ID: tv7sh_oRRC6a26whxPF84Q
+2023-08-17 21:49:20 [SpringContextShutdownHook] INFO  c.g.m.d.k.p.c.s.i.TwitterKafkaProducer - Closing kafka producer!
+2023-08-17 21:49:20 [SpringContextShutdownHook] INFO  o.a.k.clients.producer.KafkaProducer - [Producer clientId=producer-1] Closing the Kafka producer with timeoutMillis = 30000 ms.
